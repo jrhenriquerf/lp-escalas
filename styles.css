@@ -20,14 +20,20 @@
 .schedule{display:flex;flex-direction:column;gap:10px;margin:34px 0;width:100%}.schedule>div{display:flex;align-items:center;gap:14px;padding:14px 18px;border:1px solid #3e3e41;background:rgba(255,255,255,.045);border-radius:13px}.schedule p{margin:0;line-height:1.2;min-width:0;flex:1}.schedule small{display:block;color:#979793;font-size:10px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}.schedule strong{display:block;color:#fff;font:700 14px/1.2 "Manrope",sans-serif}.schedule strong b{color:var(--orange);font-size:17px}.schedule strong i{color:#67676a;padding:0 4px}.schedule p em{display:block;margin-top:3px;color:var(--orange);font-size:10px;font-style:normal;text-transform:uppercase;letter-spacing:.14em}.schedule-icon{width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center;border-radius:11px;background:var(--orange);color:white;font:800 18px "Manrope"}.note{width:46px;height:46px;flex:0 0 46px;display:grid;place-items:center;color:var(--orange);font-size:28px}
 
 /* ── HERO INFO BAR ── */
-.hero-info{display:flex;align-items:stretch;gap:0;margin:44px 0 36px;border:1px solid rgba(255,255,255,.18);border-radius:20px;overflow:hidden;backdrop-filter:blur(10px);background:rgba(13,13,15,.45)}
-.hero-info-item{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 20px;gap:4px;text-align:center}
-.hero-info-label{font:700 10px/1 "Manrope",sans-serif;text-transform:uppercase;letter-spacing:.18em;color:rgba(255,255,255,.5)}
-.hero-info-value{font:800 clamp(42px,6vw,64px)/1 "Manrope",sans-serif;letter-spacing:-.04em;color:#fff;margin:8px 0 4px}
-.hero-info-value em{font-style:normal;color:var(--orange);font-size:.65em;letter-spacing:-.02em}
-.hero-info-sub{font:500 11px/1 "DM Sans",sans-serif;color:rgba(255,255,255,.38);letter-spacing:.05em}
-.hero-info-divider{width:1px;background:rgba(255,255,255,.12);align-self:stretch;flex:none}
-@media(max-width:500px){.hero-info{flex-direction:column;border-radius:16px}.hero-info-divider{width:auto;height:1px}.hero-info-item{padding:20px 16px}.hero-info-value{font-size:48px}}
+.hero-info{display:flex;flex-direction:column;align-items:center;gap:10px;margin:44px 0 36px;width:100%}
+.hero-info-top{display:flex;justify-content:center}
+.hero-info-bottom{display:flex;gap:10px;width:100%}
+.hero-info-item{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:22px 20px 20px;text-align:center;border-radius:16px;border:1px solid rgba(255,255,255,.12);background:rgba(13,13,15,.45);backdrop-filter:blur(14px)}
+.hero-info-top .hero-info-item{width:220px;background:var(--orange);border-color:transparent;box-shadow:0 14px 40px rgba(255,90,31,.4)}
+.hero-info-bottom .hero-info-item{flex:1}
+.hero-info-label{font:700 9px/1 "Manrope",sans-serif;text-transform:uppercase;letter-spacing:.2em;color:rgba(255,255,255,.5);margin-bottom:10px}
+.hero-info-highlight .hero-info-label{color:rgba(255,255,255,.75)}
+.hero-info-value{font:800 clamp(42px,5vw,58px)/.9 "Manrope",sans-serif;letter-spacing:-.05em;color:#fff}
+.hero-info-value em{font-style:normal;font-size:.48em;vertical-align:super;line-height:0;color:rgba(255,255,255,.6)}
+.hero-info-highlight .hero-info-value em{color:rgba(255,255,255,.85)}
+.hero-info-bottom .hero-info-value em{color:var(--orange)}
+.hero-info-sub{font:600 9px/1 "DM Sans",sans-serif;color:rgba(255,255,255,.35);letter-spacing:.06em;margin-top:10px;text-transform:uppercase}
+.hero-info-highlight .hero-info-sub{color:rgba(255,255,255,.65)}
 
 .section{padding:120px 0}.section-light{background:var(--paper)}.split{display:grid;grid-template-columns:.85fr 1.15fr;gap:110px}.body-copy{padding-top:42px}.body-copy>p{color:#585854}.body-copy .lead,.teacher-copy .lead{font-size:21px;line-height:1.55;color:var(--ink)}.requirement-card{margin-top:35px;padding:26px 28px;border-left:4px solid var(--orange);background:#ecebe7}.requirement-card p{margin:6px 0 12px;color:#555}.check-list{list-style:none;padding:0;margin:0}.check-list li{position:relative;padding-left:27px;margin:7px 0}.check-list li:before{content:"✓";position:absolute;left:0;color:var(--orange);font-weight:800}.compact{display:flex;flex-wrap:wrap;gap:0 25px;font-size:14px}.tracks{padding:120px 0;background:var(--ink);color:var(--white)}.tracks-header{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:55px}.track-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.track-card{position:relative;overflow:hidden;min-height:600px;padding:48px;background:#1a1a1c;border:1px solid #303033;border-radius:var(--radius)}.track-card-accent{background:linear-gradient(145deg,#242426,#171719);border-color:rgba(255,90,31,.55)}.track-card-accent:after{content:"";position:absolute;width:330px;height:330px;right:-160px;top:-170px;border:90px solid rgba(255,90,31,.17);border-radius:50%}.track-number{position:absolute;top:30px;right:34px;color:#343437;font:800 72px/1 "Manrope"}.track-card-accent .track-number{color:#42271f}.track-kicker{margin:0 0 30px;color:var(--orange);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em}.track-card h3{font:700 36px/1.12 "Manrope";letter-spacing:-.04em;margin:0 0 20px}.track-card>p:not(.track-kicker,.track-note){max-width:470px;color:#aaa}.track-list{margin:34px 0 20px;display:flex;flex-wrap:wrap;gap:9px}.track-list span{border:1px solid #404043;border-radius:999px;padding:8px 14px;color:#ddd;font-size:13px}.track-card-accent .track-list span{border-color:rgba(255,90,31,.35)}.track-note{position:absolute;left:48px;bottom:38px;margin:0;color:#777;font-size:12px}.tracks-intro{width:390px;margin:0 0 5px;color:#979793;font-size:16px;line-height:1.6}
 
